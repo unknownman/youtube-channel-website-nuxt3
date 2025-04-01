@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  debug:true,
   css: [
     "~/assets/css/main.css"
   ],
@@ -13,6 +14,14 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/i18n'
   ],
+  fonts:{
+    families: [
+      { 
+        name: "IBM Plex Sans Arabic",
+        provider: "google"
+      }
+    ]
+  },
   i18n: {
     locales:[
       {

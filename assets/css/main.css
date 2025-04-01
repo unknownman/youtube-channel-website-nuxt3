@@ -1,2 +1,6 @@
 @import "tailwindcss";
-@import "@nuxt/ui"
+@import "@nuxt/ui";
+
+@theme {
+    --font-sans: "IBM Plex Sans Arabic", sans-serif
+}
