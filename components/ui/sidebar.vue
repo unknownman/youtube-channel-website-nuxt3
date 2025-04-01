@@ -9,30 +9,7 @@
             <path fill="#171A26" d="M68.095 30.54c-6.307 0-11.12-4.897-11.12-10.872 0-5.934 4.855-10.83 11.12-10.83 6.349 0 11.162 4.938 11.162 10.83 0 5.975-4.855 10.871-11.162 10.871Zm0-5.52c3.03 0 5.27-2.406 5.27-5.31 0-2.905-2.24-5.312-5.27-5.312-3.029 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312ZM43.08 40c-4.813 0-8.506-2.116-10.373-5.934l4.896-2.655c.913 1.784 2.614 3.195 5.394 3.195 3.486 0 5.85-2.448 5.85-6.473v-.374c-1.12 1.411-3.111 2.49-6.016 2.49-5.768 0-10.373-4.481-10.373-10.581 0-5.934 4.813-10.788 11.12-10.788 6.431 0 11.162 4.605 11.162 10.788v8.299C54.74 35.27 49.76 40 43.08 40Zm.415-15.311c2.946 0 5.27-2.2 5.27-5.145 0-2.947-2.324-5.104-5.27-5.104-2.905 0-5.228 2.158-5.228 5.104s2.323 5.145 5.228 5.145ZM20.074 30.54c-6.307 0-11.12-4.897-11.12-10.872 0-5.934 4.854-10.83 11.12-10.83 6.348 0 11.162 4.938 11.162 10.83 0 5.975-4.855 10.871-11.162 10.871Zm0-5.52c3.029 0 5.27-2.406 5.27-5.31 0-2.905-2.241-5.312-5.27-5.312-3.03 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312ZM0 0h5.892v30H0V0ZM82 6.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"></path>
           </svg>
         </div>
-        <nav>
-          <ul class="space-y-3">
-            <li>
-              <a href="#" class="flex items-center justify-center rounded-lg bg-cool-200 p-3 text-cool-600" title="خانه" aria-label="خانه">
-                <Icon name="i-simple-line-icons-home" />
-              </a>
-            </li>
-            <li>
-              <a href="#" class="flex items-center justify-center rounded-lg p-3 text-cool-600 hover:bg-cool-100" title="پلی لیست ها" aria-label="پلی لیست ها">
-                <Icon name="i-simple-line-icons-playlist" ></Icon>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="flex items-center justify-center rounded-lg p-3 text-cool-600 hover:bg-cool-100" title="ارتباط با ما" aria-label="ارتباط با ما">
-                <Icon name="i-simple-line-icons-envelope" ></Icon>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="flex items-center justify-center rounded-lg p-3 text-cool-600 hover:bg-cool-100" title="درباره ما" aria-label="درباره ما">
-                <Icon name="i-simple-line-icons-exclamation" ></Icon>
-              </a>
-            </li>
-          </ul>
-        </nav>
+       <ui-sidebar-navigation />
       </div>
       <div class="mt-auto flex flex-col justify-center place-content-between place-items-center gap-y-2">
         <span class="text-lg font-thin drop-shadow-sm rotate-90 w-32 mb-5 text-cool-600 transform">کانال بیت و بیلت </span>
