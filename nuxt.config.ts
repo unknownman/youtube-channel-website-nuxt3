@@ -22,6 +22,13 @@ export default defineNuxtConfig({
       }
     ]
   },
+  runtimeConfig: {
+    youtubeApiKey: process.env.YOUTUBE_API_KEY,
+    youtubeChannelId: process.env.YOUTUBE_CHANNEL_ID,
+    public: {
+      publicKey: "this is a public key" // useRuntimeConfig().public
+    }
+  },
   i18n: {
     locales:[
       {
