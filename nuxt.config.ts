@@ -26,7 +26,8 @@ export default defineNuxtConfig({
     youtubeApiKey: process.env.YOUTUBE_API_KEY,
     youtubeChannelId: process.env.YOUTUBE_CHANNEL_ID,
     public: {
-      publicKey: "this is a public key" // useRuntimeConfig().public
+      featuredId: process.env.FEATURED_VIDEO_ID,
+      specialVideoId: process.env.SPECIAL_VIDEO_ID,
     }
   },
   i18n: {

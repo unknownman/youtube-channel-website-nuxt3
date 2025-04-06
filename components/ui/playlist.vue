@@ -21,7 +21,7 @@
         </div>
 
         <ul v-else-if="playlists && playlists.length > 0" class="-mr-2 h-48 flex-1 space-y-3 overflow-y-auto pr-2 md:h-auto">
-            <li v-for="playlist in playlists" :key="playlist.id">
+            <li v-for="playlist in selectedPlaylist" :key="playlist.id">
                 <NuxtLink
                     :to="`/playlist/${playlist.id}`"
                     class="flex cursor-pointer items-center justify-between rounded-lg bg-white p-3 transition-shadow hover:shadow-md dark:bg-gray-800 dark:hover:bg-gray-700/50"
@@ -55,4 +55,9 @@ const {
     error,
     refresh:refreshPlaylists
 } = getPlaylists()
+
+const selectedPlaylist = computed(() => {
+    let selected = playlists.value.slice(0, 6);
+    return selected;
+});
 </script>
