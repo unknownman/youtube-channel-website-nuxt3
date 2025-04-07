@@ -42,7 +42,7 @@
 *   **UI Library:** [Nuxt UI](https://ui.nuxt.com) (بر پایه [Tailwind CSS](https://tailwindcss.com) و [Headless UI](https://headlessui.dev))
 *   **State Management:** Nuxt Composables / Vue Reactivity API
 *   **API:** [YouTube Data API v3](https://developers.google.com/youtube/v3)
-*   **Content:** [Nuxt Content v2](https://content.nuxt.com)
+*   **Content:** [Nuxt Content v3](https://content.nuxt.com)
 *   **Internationalization:** [Nuxt i18n](https://i18n.nuxtjs.org)
 *   **Icons:** [Nuxt Icon](https://icon.nuxt.com) / [Iconify](https://iconify.design)
 *   **Fonts:** [Nuxt Fonts](https://fonts.nuxt.com) / [Google Fonts](https://fonts.google.com)
@@ -61,8 +61,8 @@
 
 1.  **کلون کردن ریپازیتوری:**
     ```bash
-    git clone https://github.com/[YourUsername]/[YourRepositoryName].git
-    cd [YourRepositoryName]
+    git clone https://github.com/unknownman/youtube-channel-website-nuxt3
+    cd youtube-channel-website-nuxt3
     ```
 
 2.  **نصب وابستگی‌ها:**
@@ -115,6 +115,7 @@
     ```
 
 ## 📁 ساختار پروژه (اختیاری)
+```
 .
 ├── .env-sample # نمونه فایل متغیرهای محیطی
 ├── .gitignore
@@ -147,6 +148,8 @@
 │ └── youtube/
 ├── tsconfig.json # پیکربندی TypeScript
 └── README.md # این فایل :)
+```
+
 
 ## 🤝 مشارکت (اختیاری)
 
@@ -154,7 +157,7 @@
 
 ## 📄 لایسنس (اختیاری)
 
-این پروژه تحت لایسنس MIT منتشر شده است. [LICENSE](LICENSE) فایل را برای جزئیات بیشتر ببینید. (اگر می‌خواهید لایسنس اضافه کنید)
+این پروژه تحت لایسنس GPL v3 منتشر شده است. [LICENSE](LICENSE) فایل را برای جزئیات بیشتر ببینید. (اگر می‌خواهید لایسنس اضافه کنید)
 
 ---
 
