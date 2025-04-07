@@ -14,16 +14,16 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="flex items-center justify-center rounded-lg p-3 text-cool-600 hover:bg-cool-100"
+                <nuxt-link to="/page/contact" class="flex items-center justify-center rounded-lg p-3 text-cool-600 hover:bg-cool-100"
                     title="ارتباط با ما" aria-label="ارتباط با ما">
                     <Icon name="i-simple-line-icons-envelope"></Icon>
-                </a>
+                </nuxt-link>
             </li>
             <li>
-                <a href="#" class="flex items-center justify-center rounded-lg p-3 text-cool-600 hover:bg-cool-100"
+                <nuxt-link to="/page/about" class="flex items-center justify-center rounded-lg p-3 text-cool-600 hover:bg-cool-100"
                     title="درباره ما" aria-label="درباره ما">
                     <Icon name="i-simple-line-icons-exclamation"></Icon>
-                </a>
+                </nuxt-link>
             </li>
         </ul>
     </nav>
