@@ -2,10 +2,10 @@
     <nav>
         <ul class="space-y-3">
             <li>
-                <a href="#" class="flex items-center justify-center rounded-lg bg-cool-200 p-3 text-cool-600"
+                <nuxt-link to="/" class="flex items-center justify-center rounded-lg bg-cool-200 p-3 text-cool-600"
                     title="خانه" aria-label="خانه">
                     <Icon name="i-simple-line-icons-home" />
-                </a>
+                </nuxt-link>
             </li>
             <li>
                 <a href="#" class="flex items-center justify-center rounded-lg p-3 text-cool-600 hover:bg-cool-100"
