@@ -1,3 +1,22 @@
 {
-    "welcome": "Welcome!"
+    "welcome": "Welcome!",
+    "featured": "Featured Videos",
+    "playlists": "Playlists",
+    "allPlaylist": "All Playlists",
+    "latest": "Latest Channel Videos",
+    "shorts": "Short Videos",
+    "special": "Special Video",
+    "loading": "Loading",
+    "error": {
+        "fetch": "Error loading videos",
+        "general": "An error occurred"
+    },
+    "actions": {
+        "retry": "Try Again"
+    },
+    "video": {
+        "one": "video",
+        "other": "videos"
+    },
+    "views": "views"
 }
