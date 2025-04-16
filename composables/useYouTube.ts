@@ -103,13 +103,33 @@ export function useYouTube() {
         }
     }
 
+    function getPlaylistVideos(playlistId: string) {
+        const endpoint = `/api/youtube/playlist/${playlistId}`
+
+        const {
+            data: videos,
+            status,
+            error,
+            refresh
+        } = useFetch(endpoint, {
+            key: `youtube-playlist-${playlistId}`
+        })
+
+        return {
+            videos,
+            status,
+            error,
+            refresh
+        }
+    }
 
     return {
         getPlaylists,
         getChannelInfo,
-        getLatestShorts,
         getLatestVideos,
+        getLatestShorts,
         getVideosByTag,
-        getVideoById
+        getVideoById,
+        getPlaylistVideos  
     }
 }

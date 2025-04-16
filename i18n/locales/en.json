@@ -18,5 +18,13 @@
         "one": "video",
         "other": "videos"
     },
-    "views": "views"
+    "views": "views",
+    "playlist": {
+        "title": "Playlist",
+        "description": "Description",
+        "videos": "Videos in playlist",
+        "empty": "No videos in this playlist",
+        "publishDate": "Published on",
+        "duration": "Duration"
+    }
 }
