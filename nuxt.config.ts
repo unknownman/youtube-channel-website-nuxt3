@@ -44,5 +44,20 @@ export default defineNuxtConfig({
     ],
     defaultLocale: process.env.DEFAULT_LOCALE || 'en',
     lazy: true,
+  },
+  app: {
+    baseURL: '/', // This will be automatically adjusted for GitHub Pages
+    head: {
+      title: 'BW8 YouTube Channel',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'BW8 YouTube Channel Videos and Playlists' }
+      ]
+    }
+  },
+  
+  nitro: {
+    preset: 'github-pages'
   }
 })
