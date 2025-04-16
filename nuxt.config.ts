@@ -46,18 +46,15 @@ export default defineNuxtConfig({
     lazy: true,
   },
   app: {
-    baseURL: '/', // This will be automatically adjusted for GitHub Pages
-    head: {
-      title: 'BW8 YouTube Channel',
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'BW8 YouTube Channel Videos and Playlists' }
-      ]
-    }
+    baseURL: '/youtube-channel-website-nuxt3/', // Match your repository name
+    buildAssetsDir: 'assets', // Default is '_nuxt'
   },
-  
+
   nitro: {
-    preset: 'github-pages'
+    preset: 'github-pages',
+    output: {
+      dir: '.output/public',
+      publicDir: '.output/public'
+    }
   }
 })

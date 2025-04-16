@@ -3,17 +3,16 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # or your default branch
+      - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -21,18 +20,23 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build
+      - name: Generate Static Files
         run: npm run generate
         env:
+          NUXT_APP_BASE_URL: '/youtube-channel-website-nuxt3/'
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
           FEATURED_VIDEO_ID: ${{ secrets.FEATURED_VIDEO_ID }}
           SPECIAL_VIDEO_ID: ${{ secrets.SPECIAL_VIDEO_ID }}
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          cname: bw8.ir
+          path: .output/public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
