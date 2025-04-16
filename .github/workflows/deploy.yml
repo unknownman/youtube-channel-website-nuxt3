@@ -33,8 +33,11 @@ jobs:
         run: npm ci
 
       - name: Generate Static Files
-        run: npm run generate
+        run: |
+          npm run build
+          npm run generate
         env:
+          NODE_ENV: production
           NITRO_PRESET: 'github-pages'
           NUXT_APP_BASE_URL: '/youtube-channel-website-nuxt3/'
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}

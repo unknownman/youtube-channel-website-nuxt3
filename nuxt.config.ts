@@ -52,9 +52,25 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'github-pages',
-    output: {
-      dir: '.output/public',
-      publicDir: '.output/public'
+    prerender: {
+      failOnError: false
     }
+  },
+
+  content: {
+    // Add basic content configuration
+    documentDriven: true,
+    markdown: {
+      anchorLinks: false
+    }
+  },
+
+  app: {
+    baseURL: '/youtube-channel-website-nuxt3/',
+    buildAssetsDir: 'assets'
+  },
+
+  experimental: {
+    payloadExtraction: false
   }
 })
